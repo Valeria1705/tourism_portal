@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <img src="../img/logo.png" width="80" alt="Логотип">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="about.html">Про сайт</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="news.html">Новини</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Контакти -->
+    <section id="contacts">
+        <h1>📍 Наші контакти</h1>
+        <p>Якщо у вас є питання або пропозиції, зв'яжіться з нами!</p>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>📞 Телефон:</h2>
+                <p>+38 (098) 123-45-67</p>
+
+                <h2>📧 Email:</h2>
+                <p>info@tourism-portal.com</p>
+
+                <h2>🏢 Адреса:</h2>
+                <p>вул. Центральна, 15, Київ, Україна</p>
+            </div>
+
+            <div class="contact-form">
+                <h2>✉️ Напишіть нам</h2>
+                <form>
+                    <input type="text" name="name" placeholder="Ваше ім'я" required>
+                    <input type="email" name="email" placeholder="Ваш Email" required>
+                    <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+                    <button type="submit">Надіслати</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="map"></div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <p>© 2025 Туристичний портал. Всі права захищені.</p>
+    </footer>
+
+    <!-- Підключення Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTtEuqlh8kpxoxrI6GtO67bZ4KXjcKYj0&callback=initMap" async defer></script>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
+

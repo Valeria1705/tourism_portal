@@ -1,0 +1,364 @@
+body {
+    background: linear-gradient(to right, #eab839, #00c8ff);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: white;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(82, 200, 251);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#tourism {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    margin-top: 30px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tourism-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    max-width: 80%;
+}
+
+.tourism-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tourism-item img {
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.tourism-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Контент */
+#about {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Заголовки */
+h1 {
+    font-size: 28px;
+    color: rgb(72, 186, 235);
+}
+
+h2 {
+    font-size: 24px;
+    color: #ff7f50;
+}
+
+/* Список */
+ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Анімація */
+nav ul li a:hover {
+    color: #ffcc00;
+    transition: 0.3s;
+}
+
+#about p {
+    font-size: 18px;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+}
+
+#gallery {
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(78, 96, 255);
+}
+
+
+
+/* Контейнер галереї */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Стиль для картинок */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ефект наведення */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Оверлей тексту */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Показати текст при наведенні */
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+#news {
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 30px;
+    color: black;
+}
+
+/* Контейнер новин */
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Карточки новин */
+.news-item {
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-item h2 {
+    font-size: 20px;
+    color: #ff7f50;
+    padding: 15px;
+}
+
+.news-item p {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.news-item a {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Ефект при наведенні */
+.news-item:hover {
+    transform: scale(1.05);
+}
+
+.news-item a:hover {
+    background: #ff4500;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Читати далі */
+.news-item button {
+    background: linear-gradient(to right, #007bff, #00c8ff); /* Градієнт */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.news-item button:hover {
+    background: linear-gradient(to right, #0056b3, #0084d0);
+    transform: scale(1.05);
+}
+
+/* Оформлення контактів */
+#contacts {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.contact-info, .contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 45%;
+}
+
+/* Стиль форми */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background: linear-gradient(to right, #007bff, #00c8ff);
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.contact-form button:hover {
+    background: linear-gradient(to right, #0056b3, #0084d0);
+    transform: scale(1.05);
+}
+
+#map {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+}

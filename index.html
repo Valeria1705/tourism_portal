@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Найвідоміші туристичні місця світу</title>
+    <link rel="stylesheet" href="css/style.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=VALID_API_KEY&callback=initMap" async defer></script>
+	<script src="../js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Шапка сайту -->
+    <header class="header">
+        <img src="img/logo.png" width="80" alt="Логотип">
+        <nav>
+            <ul>
+                <li><a href="pages/about.html">Про сайт</a></li>
+                <li><a href="pages/gallery.html">Галерея</a></li>
+                <li><a href="pages/news.html">Новини</a></li>
+                <li><a href="pages/contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Слайдер -->
+    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slider1.jpg" class="d-block w-100" alt="Місце 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider2.jpg" class="d-block w-100" alt="Місце 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!--Топ 10 найтуристичніших країн світу-->
+    <section id="tourism">
+    <h2 class="title">Топ 10 найвідоміших туристичних країн світу</h2>
+    <div class="tourism-container">
+        <div class="tourism-item">
+            <img src="img/place1.jpg" alt="Місце 1">
+            <p>1. Кейптаун, ПАР</p>
+        </div>
+        <div class="tourism-item">
+            <img src="img/place2.jpg" alt="Місце 2">
+            <p>2. Бангкок, Таїланд</p>
+        </div>
+        <div class="tourism-item">
+            <img src="img/place3.jpg" alt="Місце 3">
+            <p>3. Нью-Йорк, США</p>
+        </div>
+		<div class="tourism-item">
+            <img src="img/place4.jpg" alt="Місце 4">
+            <p>4. Мельбурн, Австралія</p>
+        </div>
+		<div class="tourism-item">
+            <img src="img/place5.jpg" alt="Місце 5">
+            <p>5. Лондон, Велика Британія</p>
+        </div>
+		<div class="tourism-item">
+            <img src="img/place6.jpg" alt="Місце 6">
+            <p>6. Новий Орлеан, США</p>
+        </div>
+		<div class="tourism-item">
+            <img src="img/place7.jpg" alt="Місце 7">
+            <p>7. Мехіко, Мексика</p>
+        </div>
+		<div class="tourism-item">
+            <img src="img/place8.jpg" alt="Місце 8">
+            <p>8. Порто, Португалія</p>
+        </div>
+		<div class="tourism-item">
+            <img src="img/place9.jpg" alt="Місце 9">
+            <p>9. Шанхай, Китай</p>
+		</div>
+		<div class="tourism-item">
+            <img src="img/place10.jpg" alt="Місце 10">
+            <p>10. Копенгаген, Данія</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Футер -->
+    <footer>
+        <p>© 2025 Туристичний портал</p>
+    </footer>
+</body>
+</html>

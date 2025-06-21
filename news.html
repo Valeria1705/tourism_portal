@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Новини</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <img src="../img/logo.png" width="80" alt="Логотип">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="about.html">Про сайт</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Контент -->
+    <section id="news">
+        <h1>📰 Останні новини</h1>
+        <p>Будьте в курсі найцікавіших подій у світі подорожей!</p>
+        
+        <div class="news-container">
+            <div class="news-item">
+                <img src="../img/news1.jpg" alt="Новина 1">
+                <h2>🌍 Відкриття нового туристичного маршруту!</h2>
+                <p>5 нових європейських піших маршрутів, які варто пройти у 2025 році</p>
+                <button data-modal="modal1">Читати далі</button>
+            </div>
+
+            <div class="news-item">
+                <img src="../img/news2.jpg" alt="Новина 2">
+                <h2>✈️ Найкращі країни для відпочинку у 2025 році</h2>
+                <p>Досліджено, які країни стануть топовими напрямками для подорожей цього року...</p>
+                <button data-modal="modal2">Читати далі</button>
+            </div>
+
+            <div class="news-item">
+                <img src="../img/news3.jpg" alt="Новина 3">
+                <h2>🏔 Нові правила для туристів у горах</h2>
+                <p>Важливі зміни у правилах відвідування популярних гірських курортів...</p>
+                <button data-modal="modal3">Читати далі</button>
+            </div>
+
+            <div class="news-item">
+                <img src="../img/news4.jpg" alt="Новина 4">
+                <h2>🏝 Новий курорт на Мальдівах: райський відпочинок у стилі люкс!</h2>
+                <p>На Мальдівах відкрився новий курорт, що поєднує сучасні технології та екологічну відповідальність...</p>
+                <button data-modal="modal4">Читати далі</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal1" class="modal">Читати далі</button>
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>🌍 Відкриття нового туристичного маршруту!</h2>
+            <a href="https://www.journeys6senses.com/5-new-walking-routs/" target="_blank" class="read-more-btn">Читати далі</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">Читати далі</button>
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>✈️ Найкращі країни для відпочинку у 2025 році</h2>
+            <a href="https://waytravel.com.ua/top-10-krayin-dlya-vidpochynku.html" target="_blank" class="read-more-btn">Читати далі</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">Читати далі</button>
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>🏔 Нові правила для туристів у горах</h2>
+            <a href="https://svitkarpat.org/blog/top-14-pravyl-povedinky-v-horakh.html" target="_blank" class="read-more-btn">Читати далі</a>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">Читати далі</button>
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>🏝 Новий курорт на Мальдівах: райський відпочинок у стилі люкс!</h2>
+             <a href="https://www.gloss.ee/2025/02/24/novyy-kurort-na-malydivah-s-kontseptsiey-wellness-i-fokusom-na-blagopoluchie-otkryl-svoi-dveri-dlya-gostey/" target="_blank" class="read-more-btn">Читати далі</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Туристичний портал. Всі права захищені.</p>
+    </footer>
+
+</body>
+</html>
+
+
